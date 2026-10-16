@@ -1,0 +1,40 @@
+{
+  "es": {
+    "inicio": "Inicio",
+    "perfumes": "Perfumes",
+    "nosotros": "Nosotros",
+    "contacto": "Contacto",
+    "comprar": "Comprar",
+    "subtitulo": "EL ARTE DE LA PERFUMERÍA",
+    "titulo": "Tu aroma, tu esencia.",
+    "descripcion": "Descubre fragancias exclusivas que expresan tu personalidad y dejan una impresión inolvidable.",
+    "explorar": "Explorar colección",
+    "coleccion": "Nuestra colección",
+    "catalogo": "Nuestros perfumes",
+    "agregar": "Agregar",
+    "carrito": "Tu carrito",
+    "total": "Total",
+    "vaciar": "Vaciar carrito",
+    "esencia": "Más que un perfume, una experiencia",
+    "mensaje": "La esencia de la elegancia."
+  },
+  "en": {
+    "inicio": "Home",
+    "perfumes": "Perfumes",
+    "nosotros": "About us",
+    "contacto": "Contact",
+    "comprar": "Shop now",
+    "subtitulo": "THE ART OF PERFUMERY",
+    "titulo": "Your scent, your essence.",
+    "descripcion": "Discover exclusive fragrances that express your personality and leave an unforgettable impression.",
+    "explorar": "Explore collection",
+    "coleccion": "Our collection",
+    "catalogo": "Our perfumes",
+    "agregar": "Add to cart",
+    "carrito": "Your cart",
+    "total": "Total",
+    "vaciar": "Empty cart",
+    "esencia": "More than a perfume, an experience",
+    "mensaje": "The essence of elegance."
+  }
+}

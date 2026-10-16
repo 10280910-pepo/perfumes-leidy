@@ -1,0 +1,371 @@
+/* ===== CONFIGURACIÓN GENERAL ===== */
+:root {
+    --negro: #260B35;
+    --negro-claro: #ffffff;
+    --dorado: #d4af37;
+    --blanco: #f8f5ed;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    background: var(--negro);
+    color: var(--blanco);
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 20px;
+}
+
+h2 span,
+.hero h1 span {
+    color: var(--dorado);
+}
+
+p {
+    color: #c6c3bb;
+    line-height: 1.8;
+}
+
+/* ===== MENÚ ===== */
+.navbar {
+    background: rgba(12, 12, 12, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: var(--dorado) !important;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: #eee !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--dorado) !important;
+}
+
+/* ===== BOTONES ===== */
+.btn-gold {
+    background: linear-gradient(135deg, #f4df8a, #c49a25);
+    color: #151515;
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 11px 22px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-gold:hover {
+    color: #000;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+/* ===== PORTADA ===== */
+.hero {
+    min-height: 100vh;
+    padding: 130px 0 70px;
+    background:
+        radial-gradient(ellipse at 80% 40%,
+        rgba(212, 175, 55, 0.12), transparent 50%),
+        var(--negro);
+}
+
+.hero-text {
+    animation: aparecerIzquierda 1s ease both;
+}
+
+.subtitle {
+    display: inline-block;
+    color: var(--dorado);
+    letter-spacing: 4px;
+    font-size: 0.78rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(3.5rem, 7vw, 6rem);
+    line-height: 1.08;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 530px;
+    object-fit: cover;
+    border-radius: 200px 200px 20px 20px;
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.4);
+    animation: flotar 5s ease-in-out infinite;
+}
+
+/* ===== TÍTULOS ===== */
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    margin-bottom: 12px;
+}
+
+/* ===== CARRUSEL ===== */
+#coleccion {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+.carousel-inner {
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    background: #222;
+}
+
+.carousel-img {
+    height: 520px;
+    object-fit: cover;
+    filter: brightness(0.65);
+    transition: transform 5s ease;
+}
+
+.carousel-item.active .carousel-img {
+    transform: scale(1.05);
+}
+
+.carousel-caption {
+    bottom: 60px;
+}
+
+.carousel-caption h3 {
+    color: #fff;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-shadow: 0 3px 15px #000;
+}
+
+.carousel-caption p {
+    color: #fff;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--dorado);
+}
+
+/* ===== CATÁLOGO ===== */
+.catalog-section {
+    background: #151515;
+}
+
+.perfume-card {
+    height: 100%;
+    overflow: hidden;
+    background: #202020;
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    border-radius: 18px;
+    transition: transform 0.4s, border-color 0.4s,
+                box-shadow 0.4s;
+}
+
+.perfume-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--dorado);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    background: #292929;
+}
+
+.product-image img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.perfume-card:hover .product-image img {
+    transform: scale(1.08);
+}
+
+.product-badge {
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    left: 15px;
+    padding: 7px 13px;
+    background: var(--dorado);
+    color: #111;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.product-info {
+    padding: 24px;
+}
+
+.product-type {
+    color: var(--dorado);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.product-info h3 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 0.9rem;
+    min-height: 48px;
+}
+
+.price {
+    color: var(--dorado);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* ===== CARRITO ===== */
+.cart-box {
+    background: #1c1c1c;
+    padding: 30px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 18px;
+}
+
+.cart-box h2,
+.cart-box h4 {
+    color: var(--dorado);
+}
+
+#listaCarrito p {
+    margin-top: 15px;
+}
+
+/* ===== NOSOTROS ===== */
+.about-section {
+    background:
+        radial-gradient(ellipse at center,
+        rgba(212, 175, 55, 0.09), transparent 70%),
+        #151515;
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+}
+
+.about-text {
+    max-width: 750px;
+}
+
+/* ===== CONTACTO ===== */
+#contacto {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.footer {
+    background: #080808;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.footer h4 {
+    color: var(--dorado);
+    letter-spacing: 3px;
+}
+
+.footer p {
+    font-size: 0.85rem;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes aparecerIzquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* ===== CELULARES ===== */
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding-top: 120px;
+    }
+
+    .hero h1 {
+        font-size: 3.3rem;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+        max-height: 400px;
+    }
+
+    .carousel-img {
+        height: 320px;
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.7rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.85rem;
+    }
+
+    .product-image img {
+        height: 260px;
+    }
+}
+
+/* Respeta las preferencias de movimiento */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
